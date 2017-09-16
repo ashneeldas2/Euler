@@ -25,4 +25,10 @@ int main() {
     i++;
     if (breakable == 1) break;
   }
+  // Project Euler #6: Find the difference between the sum of the squares from 1 to 100 and the square of the sums.
+  sum = 100 * (1+100)/2; // uses the formula S = n(a1+an)/2
+  int square_sum; 
+  for (i = 1; i < 101; i++) 
+    square_sum += i * i;
+  printf("The difference between the square of the sum and the sum of the squares is: %d\n", sum*sum-square_sum);
 }
